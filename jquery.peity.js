@@ -52,6 +52,9 @@
       var elem = createCanvas(opts.radius, opts.radius)
       var canvas = elem.getContext("2d");
 
+      // title
+      elem.title = Math.floor(v1/v2*100) + "%"
+
       // Plate.
       canvas.beginPath();
       canvas.moveTo(centre, centre);
